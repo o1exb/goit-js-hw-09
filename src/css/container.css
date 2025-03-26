@@ -17,3 +17,23 @@
     max-width: 1200px;
   }
 }
+.gallery img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  column-gap: 24px;
+  row-gap: 48px;
+  margin: 0;
+  padding: 0;
+}
+
+.gallery li {
+  width: calc((100% - 48px) / 3);
+}
